@@ -1,0 +1,21 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/ed/96/e5/ed96e5b13349be8bec8cd09a7656c580.jpg);
+    background-repeat: repeat-x;
+    background-color: #2d2c2a;
+}
+
+.main {
+    height: 75vh;
+    width: 75vw;
+    background-image: url(https://i.pinimg.com/originals/b1/e3/2d/b1e32dcd40d8650cc5798f6f2cfc5b07.jpg);
+    background-repeat: repeat;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.headline {
+    font-family: triforcetriforce;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 10px;
+}
