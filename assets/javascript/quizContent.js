@@ -5,14 +5,14 @@ var quiz = [
     answers: ["9", "3", "4", "6"],
     correct: 3,
     correctGif: "<img src='assets/images/01-ssb-twoLinks.gif",
-    wrongGif: "<img src='../images/wrong-ww-wave.gif' />"
+    wrongGif: "<img src='assets/images/wrong-ww-wave.gif' />"
     },
 
     {question: "What is the name of Link's faithful steed?",
     answers: ["Lorse", "Epona", "Shadowfax", "Zelda"],
     correct: 1,
-    correctGif: "<img src='../images/02-tp-epona.gif />",
-    wrongGif: "<img src='../images/wrong-ww-wave.gif' />"
+    correctGif: "<img src='assets/images/02-tp-epona.gif />",
+    wrongGif: "<img src='assets/images/wrong-ww-wave.gif' />"
     },
 
     {question: "What is the only game in the series where 5 pieces of heart make up a heart container, rather than 4?",
