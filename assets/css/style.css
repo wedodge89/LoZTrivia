@@ -19,3 +19,14 @@ body {
     text-align: center;
     padding-top: 10px;
 }
+
+.zeldaFont2 {
+    font-family: zelda_dx_tt_brkregular;
+    font-size: 22px;
+}
+
+#timer {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}

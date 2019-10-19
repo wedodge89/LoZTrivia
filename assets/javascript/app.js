@@ -1,73 +1,74 @@
-$(document).ready(function() {
-var quiz = [
-    question1 = {
-        question: "How many Legend of Zelda characters are in Super Smash Bros. Ultimate?",
-        wrong1: 9,
-        wrong2: 3,
-        wrong3: 4,
-        correct: 6},
+// Create an array containing all questions and answers.
+    var quiz = [
+        {question: "How many Legend of Zelda characters are in Super Smash Bros. Ultimate?",
+        answers: ["9", "3", "4", "6"],
+        correct: 3,
+        correctGif: "<img src='assets/images/01-ssb-twoLinks.gif",
+        wrongGif: "<img src='../images/wrong-ww-wave.gif' />"
+        },
 
-    question2 = {
-        question: "What is the name of Link's faithful steed?",
-        wrong1: "Lorse",
-        wrong2: "Shadowfax",
-        wrong3: "Zelda",
-        correct: "Epona"},
+        {question: "What is the name of Link's faithful steed?",
+        answers: ["Lorse", "Epona", "Shadowfax", "Zelda"],
+        correct: 1,
+        correctGif: "<img src='../images/02-tp-epona.gif />",
+        wrongGif: "<img src='../images/wrong-ww-wave.gif' />"
+        },
 
-    question3 = {
-        question: "HWhat is the only game in the series where 5 pieces of heart make up a heart container, rather than 4?",
-        wrong1: "Link's Awakening",
-        wrong2: "Majora's Mask",
-        wrong3: "A Link Between Worlds",
-        correct: "Twilight Princess"},
+        {question: "What is the only game in the series where 5 pieces of heart make up a heart container, rather than 4?",
+        answers: ["Twilight Princess", "Majora's Mask", "A Link Between Worlds", "Link's Awakening"],
+        correct: 0,
+        correctGif: "<img src='../images/03-la-heartPiece.gif />",
+        wrongGif: "<img src='../images/wrong-ww-wave.gif' />"
+        },
 
-    question4 = {
-        question: "What is the name of Link's recurring enemy, who looks like a monstrous pig?",
-        wrong1: "Gerudo",
-        wrong2: "Ahriman",
-        wrong3: "Vaati",
-        correct: "Ganon"},
+        {question: "What is the name of Link's recurring enemy, who looks like a monstrous pig?",
+        answers: ["Gerudo", "Ahriman", "Ganon", "Vaati"],
+        correct: 2,
+        correctGif: "<img src='../images/04-alttp-ganon.gif />",
+        wrongGif: "<img src='../images/wrong-ww-wave.gif' />"
+        },
 
-    question5 = {
-        question: "What is the name of Princess Zelda's alter ego in The Wind Waker?",
-        wrong1: "Zolda",
-        wrong2: "Linkle",
-        wrong3: "Aryll",
-        correct: "Tetra"},
+        {question: "What is the name of Princess Zelda's alter ego in The Wind Waker?",
+        answers: ["Zolda", "Aryll", "Linkle", "Tetra"],
+        correct: 3,
+        correctGif: "<img src='../images/05-ww-tetra.gif />",
+        wrongGif: "<img src='../images/wrong-ww-wave.gif' />"
+        },
+        
+        {question: "What is the name of the final mask in Majora's Mask, that Link can only use during boss fights?",
+        answers: ["The Fierce Deity", "The Wrathful God", "The Vengeful Spirit", "The Mask of Courage"],
+        correct: 0,
+        correctGif: "<img src='../images/06-hw-fierceDeity.gif />",
+        wrongGif: "<img src='../images/wrong-ww-wave.gif' />"
+        },
 
-    question6 = {
-        question: "What is the name of the final mask in Majora's Mask, that Link can only use during boss fights?",
-        wrong1: "The Wrathful God",
-        wrong2: "The Vengeful Spirit",
-        wrong3: "The Mask of Courage",
-        correct: "The Feirce Deity"},
+        {question: "Which of tollowing games does Link NOT appear in?",
+        answers: ["Mario Kart 8", "Soulcalibur II", "Star Fox 64", "WarioWare Gold"],
+        correct: 2,
+        correctGif: "<img src='../images/07-mk8-linkBike.gif />",
+        wrongGif: "<img src='../images/wrong-ww-wave.gif' />"
+        },
 
-    question7 = {
-        question: "Which of tollowing games does Link NOT appear in?",
-        wrong1: "Mario Kart 8",
-        wrong2: "Soulcalibur II",
-        wrong3: "WarioWare Gold",
-        correct: "Star Fox 64"},
+        {question: "Which of the following is NOT a song in Ocarina of Time?",
+        answers: ["Zelda's Lullaby", "Bolero of Fire", "Song of Storms", "Tempo of Time"],
+        correct: 3,
+        correctGif: "<img src='../images/08-oot-ocarina.gif />",
+        wrongGif: "<img src='../images/wrong-ww-wave.gif' />"
+        },
 
-    question8 = {
-        question: "Which of the following is NOT a song in Ocarina of Time?",
-        wrong1: "Zelda's Lullaby",
-        wrong2: "Bolero of Fire",
-        wrong3: "Song of Storms",
-        correct: "Tempo of Time"},
+        {question: "What are the names of the two games released for the Game Boy Color that, when beat, could carry over to a third game/true ending?",
+        answers: ["Link's Awakening & Link's Asleepening", "Spirit Tracks & The Phantom Hourglass", "Oracle of Ages & Oracle of Seasons", "Red Version & Blue Version"],
+        correct: 2,
+        correctGif: "<img src='../images/09-ooas-horse.gif />",
+        wrongGif: "<img src='../images/wrong-ww-wave.gif' />"
+        },
 
-    question9 = {
-        question: "What are the names of the two games released for the Game Boy Color that, when beat, could carry over to a third game/true ending?",
-        wrong1: "Link's Awakening & Link's Asleepening",
-        wrong2: "Spirit Tracks & The Phantom Hourglass",
-        wrong3: "Red Version & Blue Version",
-        correct: "Oracle of Ages & Oracle of Seasons"},
-
-    question10 = {
-        question: "Which of these is not one of the three stones you must retrieve in the first part of Ocarina of Time?",
-        wrong1: "Kokiri Emerald",
-        wrong2: "Goron Ruby",
-        wrong3: "Zora Saphire",
-        correct: "Hylian Topaz"}
+        {question: "Which of these is NOT one of the three stones you must retrieve in the first part of Ocarina of Time?",
+        answers: ["Kokiri Emerald", "Goron Ruby", "Zora Sapphire", "Hylian Topaz"],
+        correct: 3,
+        correctGif: "<img src='../images/10-art-threeStones.gif />",
+        wrongGif: "<img src='../images/wrong-ww-wave.gif' />"
+        }
 ]
-});
+
+console.log(quiz[0].correct)
