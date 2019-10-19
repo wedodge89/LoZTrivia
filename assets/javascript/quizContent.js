@@ -72,4 +72,3 @@ var quiz = [
     }
 ]
 });
-console.log(quiz[0].correct)

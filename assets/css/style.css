@@ -11,6 +11,7 @@ body {
     background-repeat: repeat;
     margin: auto;
     margin-top: 10px;
+    text-align: center;
 }
 
 .headline {
@@ -22,11 +23,35 @@ body {
 
 .zeldaFont2 {
     font-family: zelda_dx_tt_brkregular;
-    font-size: 22px;
+    font-size: 28px;
+}
+
+.allAnswers {
+    text-align: center;
+}
+
+#start-button {
+    background-color: green;
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    font-size: 24px;
+    color: white;
 }
 
 #timer {
-    position: fixed;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#question {
+    margin:auto;
+    text-align: center;
+}
+
+#intro-image {
+    margin:auto;
+    padding: 10px;
+    width: 375.5px;
+    height: 257.5px;
 }
