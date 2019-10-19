@@ -1,4 +1,4 @@
-$(doument).ready(function() {
+$(document).ready(function() {
 // Create an array containing all questions and answers.
 var quiz = [
     {question: "How many Legend of Zelda characters are in Super Smash Bros. Ultimate?",
