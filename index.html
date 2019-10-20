@@ -14,22 +14,31 @@
 </head>
 <body>
     <div class="main">
-        <h1 class="headline">Legendary Zelda Trivia</h1>
+            <h1 class="headline">Legendary Zelda Trivia</h1>
         
-        <div id="timer">
+        <div id="intro-text">
             <p class="zeldaFont2">It's dangerous to go alone! Take this...quiz.</p>
         </div>
+
+        <div id="timer">
+        </div>
         
-        <div id="question">
+        <div id="intro-image">
             <img id="intro-image" src="assets/images/00-intro.png" />
         </div>
         
-        <div id="allAnswers">
+        <div id="question">
+        </div>
+        
+        <div id="start">
             <button id="start-button">Start</button>
-            <div id="answer1"></div>
-            <div id="answer2"></div>
-            <div id="answer3"></div>
-            <div id="answer4"></div>
+        </div>
+        
+        <div id="allAnswers">
+            <div id="answer0" class="answer-btn" value=0></div>
+            <div id="answer1" class="answer-btn" value=1></div>
+            <div id="answer2" class="answer-btn" value=2></div>
+            <div id="answer3" class="answer-btn" value=3></div>
         </div>
     </div>
     <script src="assets/javascript/quizContent.js"></script>

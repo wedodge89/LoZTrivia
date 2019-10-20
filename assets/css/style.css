@@ -30,6 +30,18 @@ body {
     text-align: center;
 }
 
+.question {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 10px;
+}
+
+.answer {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 10px;
+}
+
 #start-button {
     background-color: green;
     margin-top: 10px;
@@ -40,8 +52,10 @@ body {
 }
 
 #timer {
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #question {
