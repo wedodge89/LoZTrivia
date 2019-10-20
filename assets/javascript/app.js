@@ -93,7 +93,7 @@ $(document).ready(function() {
         clearAll()
         wrongNum ++
         unansweredNum --
-        $("#question").html(`<p class="question">Sorry, that's incorrect!</p><hr><img src=${quiz[questionNum].wrongGif}>`)
+        $("#question").html(`<p class="question">Sorry, the correct answer is ${quiz[questionNum].answers[quiz[questionNum].correct]}!</p><hr><img src=${quiz[questionNum].wrongGif}>`)
         setTimeout(nextQuestion, 3000)
     }
 
@@ -111,9 +111,9 @@ $(document).ready(function() {
     function quizEnd() {
         clearAll()
         $("#timer").remove()
-        $(".main").html(`Correct: ${correctNum}/10`)
-        $(".main").html(`Incorrect: ${wrongNum}/10`)
-        $(".main").html(`Unanswered: ${unansweredNum}/10`)
+        $(".main").append(`<p class="answer">Correct: ${correctNum}/10<hr>`)
+        $(".main").append(`<p class="answer">Incorrect: ${wrongNum}/10<hr>`)
+        $(".main").append(`<p class="answer">Unanswered: ${unansweredNum}/10<hr>`)
     }
 
 
