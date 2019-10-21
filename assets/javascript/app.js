@@ -8,7 +8,7 @@ $(document).ready(function() {
     let unansweredNum = 10;
     let gameStart = false;
     let intervalId;
-    let answer = ""
+    let answer;
 
     // Clearing initial values from main divs.
     function clearAll() {
@@ -74,9 +74,9 @@ $(document).ready(function() {
 
     // Answer button functionality
     $(".answer-btn").on("click", function() {
-        let answer = parseInt($(this).attr("value"));
+        answer = $(this).attr("value");
         console.log(answer)
-        answerCheck()
+        answerCheck(answer)
     })
 
     // Correct guess function
@@ -98,9 +98,9 @@ $(document).ready(function() {
     }
 
     // Check answer chosen vs. correct answer
-    function answerCheck() {
+    function answerCheck(answer) {
         console.log(quiz[questionNum].correct)
-        if (answer = quiz[questionNum].correct) {
+        if (answer == quiz[questionNum].correct) {
             correctAnswer()
         } else {
             wrongAnswer()
