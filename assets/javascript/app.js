@@ -6,7 +6,6 @@ $(document).ready(function() {
     let correctNum = 0;
     let wrongNum = 0;
     let unansweredNum = 10;
-    let gameStart = false;
     let intervalId;
     let answer;
 
@@ -53,8 +52,7 @@ $(document).ready(function() {
         questionNum ++
         if (questionNum === quiz.length) {
             quizEnd()
-        }
-        gameStart = true;
+        } else {
         number = 30
         clearAll()
         startTimer()
@@ -64,7 +62,7 @@ $(document).ready(function() {
         $("#answer2").html(`<p class="answer">${quiz[questionNum].answers[2]}</p>`)
         $("#answer3").html(`<p class="answer">${quiz[questionNum].answers[3]}</p>`)
 }
-
+    }
     // Start button functionality
     $("#start-button").on("click", function() {
         clearAll()
