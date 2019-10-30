@@ -45,7 +45,7 @@ var quiz = [
     {question: "Which of tollowing games does Link NOT appear in?",
     answers: ["Mario Kart 8", "Soulcalibur II", "Star Fox 64", "WarioWare Gold"],
     correct: "2",
-    correctGif: "assets/images/07-mk8-linkBike.gif",
+    correctGif: "assets/images/07-mk8-linkBike-Resize.gif",
     wrongGif: "assets/images/wrong-ww-wave.gif"
     },
 
@@ -66,7 +66,7 @@ var quiz = [
     {question: "Which of these is NOT one of the three stones you must retrieve in the first part of Ocarina of Time?",
     answers: ["Kokiri Emerald", "Goron Ruby", "Zora Sapphire", "Hylian Topaz"],
     correct: "3",
-    correctGif: "assets/images/10-art-threeStones.gif",
+    correctGif: "assets/images/10-art-threeStones-Resize.gif",
     wrongGif: "assets/images/wrong-ww-wave.gif"
     }
 ]
